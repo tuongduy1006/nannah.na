@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #6ec2f7, #9fd9f9, #9fd9f9);
+    text-align: center;
+    color: white;
+    min-height: 100vh;
+    
+  }
+  
+  .container {
+    padding: 2rem;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    margin-bottom: 1rem;
+  }
+  
+  .name {
+    margin-top: -10px;
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  .subtitle {
+    font-size: 0.9rem;
+    margin: 1rem 0;
+    color: #ffe;
+  }
+
+  .link:hover {
+    background-color: #222;
+  }
+
+  .link {
+  background-color: #000;
+  color: #fff;
+  border-radius: 2rem;
+  position: relative;
+  padding: 0.5rem 1rem; /* 👈 giảm padding top/bottom */
+  margin: 0.5rem auto;
+  cursor: pointer;
+  height: 50px; /* 👈 giảm chiều cao */
+  overflow: hidden;
+  width: 80%;
+  max-width: 400px;
+}
+
+
+.link img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.title {
+  display: flex;
+  align-items: center;      /* 👈 căn giữa theo chiều dọc */
+  justify-content: center;  /* 👈 chữ ở giữa */
+  gap: 10px;
+  height: 100%;
+}
+
+.link a {
+  text-decoration: none; /* Bỏ gạch chân */
+  color: white;           /* Đổi màu chữ sang trắng */
+}
+
+.link a:hover {
+  opacity: 0.8;           /* Hoặc đổi màu nhẹ nếu muốn */
+}
+
+.product-list {
+  display: none;
+  margin-top: 0.5rem;
+}
+
+.sub-link {
+  background-color: #222;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  margin: 0.25rem auto;
+  width: 70%;
+  max-width: 350px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sub-link:hover {
+  background-color: #444;
+}
+
+.arrow {
+  font-size: 1rem;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.arrow.down {
+  transform: rotate(180deg); /* Quay mũi tên xuống */
+}
+
+.title-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* 👈 căn giữa ngang */
+  justify-content: center;  /* 👈 căn giữa dọc */
+  line-height: 1.2;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+
+.arrow {
+  font-size: 0.8rem;
+  margin-top: -1px;
+  transition: transform 0.3s ease;
+}
+
+.arrow.down {
+  transform: rotate(180deg);
+}
+
+
+  

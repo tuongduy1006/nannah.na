@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>na:3</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <img src="avatar.jpg" alt="Avatar" class="avatar" />
+    <h2>@nannah.na</h2>
+    <p class="name">Ngoc Anh</p>
+    <p class="subtitle">About Me</p>
+
+    <div class="link">
+      <img src="ig.jpg" alt="Instagram"/>
+      <a href="https://www.instagram.com/nannah.na/" target="_blank" class="title">Instagram</a>
+    </div>
+
+    <div class="link">
+      <img src="tt.jpg" alt="Tiktok" />
+      <a href="https://www.tiktok.com/@nannah.na1?is_from_webapp=1&sender_device=pc" target="_blank" class="title">Tiktok 1</a>
+    </div>
+
+    <div class="link">
+      <img src="tt.jpg" alt="Tiktok" />
+      <a href="https://www.tiktok.com/@nannah.na?is_from_webapp=1&sender_device=pc" target="_blank" class="title">Tiktok 2</a>
+    </div>
+
+<div class="link" onclick="toggleProducts()">
+  <img src="sp.jpg" alt="Link sản phẩm" />
+  <div class="title title-column">
+    <span>Link sản phẩm</span>
+    <span class="arrow" id="arrow">&#9650;</span>
+  </div>
+</div>
+
+
+<!-- Danh sách sản phẩm ẩn -->
+<div id="product-links" class="product-list">
+  <div class="sub-link">Kem dưỡng</div>
+  <div class="sub-link">Sữa rửa mặt</div>
+  <div class="sub-link">Son dưỡng</div>
+</div>
+
+  </div>
+</body>
+
+<script>
+  function toggleProducts() {
+    const list = document.getElementById("product-links");
+    const arrow = document.getElementById("arrow");
+    const isVisible = list.style.display === "block";
+
+    list.style.display = isVisible ? "none" : "block";
+    arrow.classList.toggle("down", !isVisible);
+  }
+</script>
+
+</html>
